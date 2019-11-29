@@ -3,6 +3,7 @@ build:
 	pip install -e .
 
 tests:
+	mypy args && \
 	pytest --cov args
 
 format:

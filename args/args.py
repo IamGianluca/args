@@ -18,7 +18,7 @@ class Args:
             break
         return m
 
-    def _cast_bool(self, value):
+    def _cast_bool(self, value) -> bool:
         return strtobool(value.lower())
 
     def get_bool(self, key: str) -> bool:
