@@ -8,8 +8,10 @@ from args.args import Args
 )
 def test_parse_args(bool_str, bool_bool):
     # given
-    pattern = "l,p#,d*"
-    values = [bool_str, "10", "something"]
+    pattern = "l"
+    values = [
+        bool_str,
+    ]
 
     # when
     arg = Args(pattern, values)
