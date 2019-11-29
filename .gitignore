@@ -9,3 +9,6 @@ args.egg-info/
 
 # cache
 *.pyc
+
+# pytest
+.coverage
