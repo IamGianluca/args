@@ -1,2 +1,11 @@
 # python virtualenv
 .python-version
+
+# type checking
+.mypy_cache/
+
+# build
+args.egg-info/
+
+# cache
+*.pyc
