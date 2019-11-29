@@ -5,7 +5,6 @@ __all__ = ["Args"]
 
 
 class Args:
-
     def __init__(self, pattern: str, values: List[str]):
         self.pattern = pattern
         self.values = values
@@ -17,4 +16,4 @@ class Args:
         return 0
 
     def get_string(self, key: str) -> str:
-        return 'ouch!'
+        return "ouch!"
