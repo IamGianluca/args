@@ -12,3 +12,6 @@ args.egg-info/
 
 # pytest
 .coverage
+
+# IDE
+.vim
