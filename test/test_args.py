@@ -1,15 +1,18 @@
+import pytest
+
 from args.args import Args
 
 
-def test_parse_args():
+@pytest.mark.parametrize(
+    "bool_str,bool_bool", [("True", True), ("False", False),]
+)
+def test_parse_args(bool_str, bool_bool):
     # given
     pattern = "l,p#,d*"
-    values = ["True", "10", "something"]
+    values = [bool_str, "10", "something"]
 
     # when
     arg = Args(pattern, values)
 
     # then
-    assert arg.get_bool("l")
-    assert arg.get_int("p") == 10
-    assert arg.get_string("d") == "something"
+    assert arg.get_bool("l") == bool_bool
