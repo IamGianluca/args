@@ -1,14 +1,11 @@
 apipkg==1.5
 appdirs==1.4.3
-# Editable Git install with no remote (args==0.0.1)
--e /home/gianluca/git/args
 arrow==0.13.0
 asciimatics==1.10.0
 atomicwrites==1.2.1
 atpublic==1.0
 attrs==19.3.0
 backcall==0.1.0
--e git+git@github.com:Farfetch/usds-bidding.git@80e6f261dc7b626c1243120b1d6f2bc0f8495fc3#egg=bidding
 black==19.10b0
 bleach==3.0.2
 cachetools==3.0.0
@@ -71,7 +68,6 @@ matplotlib==3.1.1
 mccabe==0.6.1
 mistune==0.8.4
 more-itertools==8.0.0
-mypy-extensions==0.4.3
 nanotime==0.5.2
 nbconvert==5.4.0
 nbformat==4.4.0
