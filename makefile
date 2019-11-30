@@ -3,8 +3,8 @@ build:
 	pip install -e .
 
 tests:
-	mypy args && \
-	pytest --cov args
+	mypy args --ignore-missing-imports && \
+	pytest -s --cov args
 
 format:
 	black -l 79 .
