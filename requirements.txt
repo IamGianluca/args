@@ -113,7 +113,7 @@ python-jsonrpc-server==0.0.2
 pytype==2019.11.27
 pytz==2018.7
 PyWavelets==1.1.1
-PyYAML==3.13
+PyYAML==5.1
 pyzmq==17.1.2
 regex==2019.11.1
 requests==2.22.0
