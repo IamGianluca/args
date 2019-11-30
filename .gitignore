@@ -2,7 +2,7 @@
 .python-version
 
 # type checking
-.mypy_cache/
+.pytype/
 
 # build
 args.egg-info/

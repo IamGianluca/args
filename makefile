@@ -3,7 +3,7 @@ build:
 	pip install -e .
 
 tests:
-	mypy args --ignore-missing-imports && \
+	pytype args && \
 	pytest -s --cov args
 
 format:

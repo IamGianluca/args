@@ -1,5 +1,5 @@
 from distutils.util import strtobool
-from typing import Any, List
+from typing import Union, List
 
 __all__ = ["Args"]
 
@@ -31,7 +31,7 @@ class Args:
             m[schema[0]] = v
         return m
 
-    def _cast(self, to: str, value: str) -> Any:  # Union[bool, str, int]
+    def _cast(self, to: str, value: str) -> Union[bool, str, int]:
         cast_func = self.get_cast_func[to[1:]]
         return cast_func(value)
 

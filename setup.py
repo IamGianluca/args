@@ -13,5 +13,5 @@ setup(
     version="0.0.1",
     description="Yet another command line argument parser",
     long_description=long_description,
-    packages=["src"],
+    packages=["args"],
 )
