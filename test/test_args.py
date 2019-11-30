@@ -26,3 +26,16 @@ def test_get_int(pattern, in_, expected):
 def test_get_str(pattern, in_, expected):
     arg = Args(pattern, in_)
     assert arg.get_str("a") == expected
+
+
+@pytest.mark.parametrize(
+    "pattern,in_,expected",
+    [
+        ("l,a*.", ["False", "99999"], [False, "99999"]),
+        ("l*.,a#", ["99999", "11111"], ["99999", 11111]),
+    ],
+)
+def test_get_str(pattern, in_, expected):
+    arg = Args(pattern, in_)
+    assert arg.get_bool("l") == expected[0]
+    assert arg.get_str("a") == expected[1]
