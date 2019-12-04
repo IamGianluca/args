@@ -1,10 +1,13 @@
 build:
-	pip install -r requirements.txt && \
-	pip install -e .
+	pip install poetry && \
+	poetry install
 
-tests:
+test:
 	pytype args && \
 	pytest -s --cov args
+
+pep8_checks:
+	flake8
 
 format:
 	black -l 79 .

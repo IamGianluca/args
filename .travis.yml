@@ -1,0 +1,10 @@
+language: python
+python:
+    - '3.7'
+install:
+    - python -V
+    - make build
+script:
+    - black -l 79 . --check
+    - make pep8_checks
+    - make test
