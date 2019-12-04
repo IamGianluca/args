@@ -31,7 +31,6 @@ class Args:
                 arg_name_and_type[0],
                 arg_name_and_type[1:],
             )
-            print("desired type is ", desired_type)
             casted_value = self._cast(to=desired_type, value=self.values[i])
             map_[arg_name] = casted_value
         return map_
